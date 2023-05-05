@@ -1,0 +1,38 @@
+def feedback(gl,gf):
+    l=[]
+    for i in range(n):
+        if gl[i]==gf[i]:
+            l.append("equal")
+        else:
+            l.append(gl[i]-gf[i])
+    return l
+
+n=eval(input())
+gl,gf=[],[]
+if n<=0:
+    print("Invalid list size")
+else:
+    for i in range(n):
+        a=int(input())
+        if a<0:
+            print("Invalid input")
+        else:
+            gl.append(a)
+        break
+    for i in range(n):
+        a=int(input())
+        if a>=0:
+            gf.append(a)
+        else:
+            print("Invalid input")
+        break
+    l=feedback(gl,gf)
+    print(l)
+
+    if word_dict[1]==1:
+        word_dict=main(word_dict[0])
+    elif word_dict[1]==0:
+        print(word_dict[0])
+    else:
+        print("Invalid Input")
+        printf(word_dict[0])
